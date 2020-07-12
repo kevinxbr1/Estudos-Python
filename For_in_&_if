@@ -1,0 +1,44 @@
+#Imprimindo um lista de valores
+teste01 = (1, 2, 3, 4) #para cada item(i) da coleção teste01, executa a função print(i) 
+for i in teste01:
+    print(i)
+    
+# Imprimindo os valores no intervalo entre 0 e 5 (exclusive)
+for contador in range(0,5):
+    print(contador)
+ 
+# Imprimindo na tela os números pares da lista de números
+lista = [1, 150, 147, 145, -2, 13.05, 4]
+for n in lista:
+    if n % 2 == 0: #o simbolo "%2 == 0" indica, numeros divididos por dois que tem resto 0
+        print (n)
+    
+# Operando os valores de uma lista com loop for
+listaB = [32,53,85,10,15,17,19]
+soma = 0
+for i in listaB:
+    double_i = i * 2 #para cada item da lista B execute double_i e soma+=
+    soma += double_i #multiple por 2 os itens(i) da lista
+print(soma)          #some double_i a variavel soma
+
+#Cuidado com a sintaxe, caso vc digite a funcao print com o tab, ele vai executar o print varias vezes
+#Sao coisas diferentes
+
+listaC = [32,53,85,10,15,17,19]
+somac = 0
+for x in listaB:
+    double_x = x * 2
+    somac += double_x
+    print(somac)
+
+#pesquisando em listas
+listad = [5,6,7,8,10,50]
+
+#loop pela lista
+for item in listad:
+    if item == 7:
+        print("numero econtrado na lista") 
+    else:
+        print("numero nao encontrado na lista")
+
+
