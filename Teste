@@ -1,0 +1,15 @@
+name = input("Digite seu nome: ")
+age = int(input("Digite sua idade: "))
+
+if name == "Kaio" and age > int("18"):
+    print("Seu nome e Kaio") 
+else:
+    print("voce nao e o kaio")
+    
+materia = input("Digite a materia: ")
+nota = input("Digite sua nota: ")
+
+if materia == "Portugues" and nota >= "7":
+    print(name + "sua nota e " + nota)
+else:
+    print(name + "vc fracassou na materia pois sua nota em %r foi %s, sorry" %(materia, nota))
