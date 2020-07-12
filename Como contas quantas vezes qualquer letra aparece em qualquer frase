@@ -1,0 +1,9 @@
+frase1 = input("Qual a frase? ")
+caracter = input("Qual letra deseja contar? ")
+count = 0
+for letra in frase1:
+    if letra == caracter:
+        count += 1
+    else:
+        count = count
+print(count)
