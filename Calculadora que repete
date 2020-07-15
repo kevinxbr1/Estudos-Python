@@ -1,0 +1,45 @@
+def soma():
+    num1 = int(input("Digite o primeiro algorismo da operacao: "))
+    num2 = int(input("Digite o segundo algorismo da operacao: "))
+    somaLocal = num1 + num2
+    print(somaLocal)
+
+def subtracao():
+    num1 = int(input("Digite o primeiro algorismo da operacao: "))
+    num2 = int(input("Digite o segundo algorismo da operacao: "))
+    subtracaoLocal = num1 - num2
+    print(subtracaoLocal)
+    
+def multiplicacao():
+    num1 = int(input("Digite o primeiro algorismo da operacao: "))
+    num2 = int(input("Digite o segundo algorismo da operacao: "))
+    multiplicaoLocal = num1*num2
+    print(multiplicaoLocal)
+    
+def divisao():
+    num1 = float(input("Digite o primeiro algorismo da operacao: "))
+    num2 = float(input("Digite o segundo algorismo da operacao: "))
+    divisaoLocal = float(num1/num2)
+    print(divisaoLocal)
+    
+name = input("Digite seu nome: ")
+print(name + ", Digite a Operacao que deseja realizar: ")
+
+operacao = ["1 - (soma)", "2 - (subtracao)", "3 - (multiplicacao)", "4 - (Divisao)", "5 - Sair da Calculadora" ]
+for item in operacao:
+    print(item)
+    
+while operacao != "qualquer coisa": #Operacao nao for igual a "qualquer coisa", ela se repete
+    escolha = input("Digite o numero da funcao desejada: ")
+
+    if escolha == "1" or "soma" or "1 - (soma)" :
+        soma()
+    elif escolha == "2":
+        subtracao()
+    elif escolha == "3":
+        multiplicacao()
+    elif escolha == "4":
+        divisao()
+    elif escolha == "5":
+        print("Calculadora encerrada, Obrigado por Testar! ")
+        break
